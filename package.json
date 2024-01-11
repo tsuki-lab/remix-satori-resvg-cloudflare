@@ -9,7 +9,8 @@
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "wrangler pages dev --compatibility-date=2023-06-21 ./public",
     "typecheck": "tsc",
-    "pages:deploy": "pnpm run build && wrangler pages deploy ./public"
+    "pages:deploy": "pnpm run build && wrangler pages deploy ./public",
+    "postinstall": "mkdir -p vender && curl -L 'https://unpkg.com/yoga-wasm-web/dist/yoga.wasm' -o vender/yoga.wasm && curl -L 'https://unpkg.com/@resvg/resvg-wasm/index_bg.wasm' -o vender/resvg.wasm"
   },
   "dependencies": {
     "@remix-run/cloudflare": "^2.4.1",
