@@ -21,7 +21,7 @@ const initResvg = async () => {
   try {
     await initWasm(resvgWasm);
   } catch (error) {
-    console.error("[initResvg]", error); // NOTE: TypeError: Invalid URL string.
+    console.error("[initResvg]", error); // NOTE: [initResvg] TypeError: Fetch API cannot load: /build/_assets/resvg-FX7W6XMT.wasm
   }
 };
 
