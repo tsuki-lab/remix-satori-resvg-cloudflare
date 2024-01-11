@@ -2,6 +2,7 @@ node_modules
 vender
 
 /.cache
+/.wrangler
 /functions/\[\[path\]\].js
 /functions/\[\[path\]\].js.map
 /functions/metafile.*
